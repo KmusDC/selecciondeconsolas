@@ -9,12 +9,6 @@ h1{
     
 }
 
-.conteiner-base{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .images-conteiner{
     margin: 100px auto;
     width: 500px;
