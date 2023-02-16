@@ -1,107 +1,67 @@
-*{
-    outline: 1px solid red;
-}
-:root{
-    --color-principal: rgb(187, 201, 231);
-    --color-secundario: rgb(79, 79, 136);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/logo_kmusdc.png" type="image/x-icon">
+    <title>KmusDC RetroArcade</title>
+</head>
+<body>
+    <header class="cabecera">
+        <a href="#" class="empresa-logo">
+                <img src="img/logo_kmusdc.png" class="logo" alt="logo de la empresa">
+                <h1>KmusDC RetroArcade</h1>
+        </a>
 
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--color-principal);
-}
+        <nav class="menu">
+            <a href="#"><h3>Inicio</h3></a>
+            <a href="#"><h3>Noticias</h3></a>
+            <a href="#"><h3>Descargas</h3></a>
+        </nav>
+    </header>
 
-.cabecera{
-    height: 150px;
-    background-color: var(--color-terciario);
-    padding: 0px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-secundario);
-}
+    <h3 id="title-content">Selecciona un sistema</h3>
 
-a{
-    color: var(--color-principal);
-    text-decoration: none;
-}
+    <div class="images-conteiner">       
+        <div class="imagen">
+            <img src="img/PSX-Console-Set.png" alt="foto de playsyation 1">
+            <span class="nombre">
+                <span class="text">PlayStation</span>
+            </span>
+        </div>
+        <div class="imagen">
+            <img src="img/N64-Console-Set.png" alt="foto de n64">
+            <span class="nombre">
+                <span class="text">Nintendo 64</span>
+            </span>
+        </div>
+        <div class="imagen">
+            <img src="img/Sega-dreamcast-Console-Set.png" alt="foto de dreamcast">
+            <span class="nombre">
+                <span class="text">Dreamcast</span>
+            </span>
+        </div>
+        <div class="imagen">
+            <img src="img/PlayStation_2.png" alt="foto de playsyation 2">
+            <span class="nombre">
+                <span class="text">PS2</span>
+            </span>
+        </div>
+        <div class="imagen">
+            <img src="img/GameCube-Console-Set.png" alt="foto de gamecube">
+            <span class="nombre">
+                <span class="text">Gamecube</span>
+            </span>
+        </div>
+        <div class="imagen">
+            <img src="img/Xbox-Console-Set.png" alt="foto de xbox">
+            <span class="nombre">
+                <span class="text">X-Box</span>
+            </span>
+        </div>
+    </div>
 
-
-.empresa-logo{
-    display: flex;
-    align-items: center;
-}
-
-.menu{
-
-    display: flex;
-    gap: 10px;
-}
-
-.menu h3{
-    border-radius: 5px;
-    padding: 0px 10px;
-}
-
-.menu h3:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(120, 111, 150);
-}
-
-
-.logo{
-    height: 90px;
-    padding-right: 10px;
-}
-
-
-@media (max-width: 800px){
-    header{
-        flex-direction: column;
-    }
-}
-
-#title-content{
-    text-align: center;
-    color: var(--color-secundario);
-}
-
-.images-conteiner{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.images-conteiner .imagen{
-    align-items: center;
-    position: relative;
-    margin-right: -20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.images-conteiner .imagen img{
-    height: 100px;
-    transition: 0.3s;
-}
-
-.images-conteiner .imagen img:hover{
-    transform: translate(-10px);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.images-conteiner .text{
-    text-align: center;
-    font-weight: 600;
-    color: var(--color-secundario);
-}
-
-.images-conteiner .imagen .nombre{
-    visibility: hidden;
-}
-
-.images-conteiner .imagen:hover .nombre{
-    visibility: visible;
-}
+</body>
+</html>
