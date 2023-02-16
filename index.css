@@ -10,7 +10,7 @@ body{
 }
 
 .cabecera{
-    height: 200px;
+    height: 250px;
     background-color: var(--color-terciario);
     padding: 0px 20px;
     display: flex;
